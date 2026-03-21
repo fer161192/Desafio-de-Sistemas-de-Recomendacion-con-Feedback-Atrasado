@@ -16,5 +16,5 @@ Para la realización de este problema se cuenta con cuatro datasets (Existe un q
 | :--- | :--- | :--- |
 | `users.csv` | Edad (age), región (region), dispositivo (device), nivel de actividad (activity_level). | Se une a las interacciones por el `user_id`. |
 | `items.csv` | Categoría (category), complejidad (complexity), novedad (novelty), calidad (quality). | Se une a las interacciones por el `item_id`. |
-| `train_interactions.csv` | `interaction_time`: Marca de tiempo de la interacción; `reward_time`: cuánto tardó en reaccionar; `observed_reward`: Resultado observado (1 = recompensa positiva, 0 = ninguna recompensa). | Es tu set para entrenar al "cerebro" del modelo. |
-| `test_interactions.csv` | El "futuro". Solo tenés quién interactuó con qué y cuándo. | Aquí es donde tenés que adivinar la probabilidad del reward. |
+| `train_interactions.csv` | `interaction_time`: Marca de tiempo de la interacción; `reward_time`: cuánto tardó en reaccionar; `observed_reward`: Resultado observado (1 = recompensa positiva, 0 = ninguna recompensa). | Este es el set para entrenar al modelo. |
+| `test_interactions.csv` |  Estos son interacciones futuras cuyo resultado permanece oculto. | Aca es donde se debe obtener la probabilidad del reward. |
