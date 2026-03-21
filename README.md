@@ -14,7 +14,7 @@ Para la realización de este problema se cuenta con cuatro datasets (Existe un q
 
 | Dataset | Contenido Clave | Relación |
 | :--- | :--- | :--- |
-| `users.csv` | Edad, región, dispositivo, nivel de actividad. | Se une a las interacciones por el `user_id`. |
-| `items.csv` | Categoría, complejidad, novedad, calidad. | Se une a las interacciones por el `item_id`. |
-| `train_interactions.csv` | El "pasado". Tiene el `interaction_time`, el `reward_time` (cuánto tardó en reaccionar) y el `observed_reward` (si fue 1 o 0). | Es tu set para entrenar al "cerebro" del modelo. |
+| `users.csv` | Edad (age), región (region), dispositivo (device), nivel de actividad (activity_level). | Se une a las interacciones por el `user_id`. |
+| `items.csv` | Categoría (category), complejidad (complexity), novedad (novelty), calidad (quality). | Se une a las interacciones por el `item_id`. |
+| `train_interactions.csv` | `interaction_time`: Marca de tiempo de la interacción, el `reward_time` (cuánto tardó en reaccionar) y el `observed_reward` (si fue 1 o 0). | Es tu set para entrenar al "cerebro" del modelo. |
 | `test_interactions.csv` | El "futuro". Solo tenés quién interactuó con qué y cuándo. | Aquí es donde tenés que adivinar la probabilidad del reward. |
